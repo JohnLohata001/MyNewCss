@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#car{
+			margin-top:200px;
+			animation-name:Mycar;
+			animation-duration: 4s;
+			animation-iteration-count:infinite;
+			}
+			@keyframes Mycar{
+				0%{left:50px; top:0px;}
+				25%{margin-left:1000px; top:0px; transform:rotate(0deg);}
+				30%{margin-left:0px; top:0px; transform:rotate(-30deg);}
+				50%{left:10px; top:0px; transform:rotate(-45deg);}
+				75%{left:50px; top:0px; transform:rotate(-90deg);  }
+				100%{left:10px; top:0px;}
+			}
+		#frontCar{
+			width:100px;
+			height:20px;
+			background:green;
+			z-index:1;
+			position:relative;
+			margin-left:10px;
+			border-radius:10px 30px 0px 0px;
+			box-shadow:10px 5px #ccc;
+			}
+		#midlleCar{
+			width:150px;
+			height:40px;
+			background:green;
+			border-radius:4px 40px 6px 5px;
+			z-index:2;
+			position:relative;
+			box-shadow:2px -2px rgba(0, 255, 0, .2);
+			}
+			#pneufirst{
+			width:40px;
+			height:40px;
+			background:black;
+			border-radius:100px;
+			margin-top:-10px;
+			float:left;
+			z-index:3;
+			position:relative;
+			border:solid 1px white;
+			}
+			#pneuSecond{
+			width:40px;
+			height:40px;
+			background:black;
+			border-radius:100px;
+			z-index:1px;
+			margin-top:-10px;
+			float:left;
+			margin-left:-20px;
+			position:relative;
+			
+			}
+			#strings{
+				height:1px;
+				border-top:solid 5px black;
+				box-shadow:10px -8px black;
+			}
+			#thirdTire{
+			width:40px;
+			height:40px;
+			background:black;
+			border-radius:100px;
+			z-index:1px;
+			margin-top:-10px;
+			float:left;
+			margin-left:30px;
+			position:relative;
+			
+			}
+			#forthTire{
+			width:40px;
+			height:40px;
+			background:black;
+			border-radius:100px;
+			margin-top:-10px;
+			float:left;
+			z-index:2;
+			position:relative;
+			border:solid 1px white;
+			margin-left:-60px;
+			}
+	</style>
+</head>
+<body>
+	<div id="car">
+		<div id="frontCar"></div>
+		<div id="midlleCar"></div>
+		<div id="pneufirst"></div>
+		<div id="pneuSecond"></div>
+		<div id="thirdTire"></div>
+		<div id="forthTire"></div>
+	</div>
+	<br>
+	<hr>
+	<div id="strings"></div>
+</body>
+</html>

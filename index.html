@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movement</title>
+	<style>
+		body{
+			padding:0;
+			margin:0;
+		}
+		.headSite{
+			height:100px;
+			width:100%;
+			background:rgba(192, 192, 192, .9);
+			margin:0px;
+			padding:0px;
+		}
+		
+		.newMovement{
+		
+			height:100px;
+			width:100px;
+			background:rgba(192, 192, 0, .9);
+			animation-name:moveBox;
+			animation-duration: 4s;
+			animation-iteration-count:infinite;
+			border-radius:100%;
+			margin-left:400px;
+			float:left;
+			
+		
+			
+		}
+		.firstMovement{
+		
+			height:100px;
+			width:100px;
+			background:rgba(192, 192, 0, .9);
+			animation-name:secondBox;
+			animation-duration: 3s;
+			animation-iteration-count:infinite;
+			border-radius:100%;
+			margin-left:30px;
+			z-index:1px;
+			
+		
+			
+		}
+		
+		
+		@keyframes moveBox {
+		
+			0%   {background-color:red; left:0px; top:0px;margin-top:400px;}
+			25%  {background-color:yellow; left:0px; top:0px; margin-top:0px;}
+			50%  {background-color:blue; left:1000px; top:0px;}
+			75%  {background-color:green; left:200px; top:0px;margin-top:400px;}
+			100% {background-color:red; left:1000px; top:0px;}
+		}	
+		@keyframes secondBox {
+		
+			0%   { margin-left:0px; top:0px;}
+			25%  { left:0px; top:0px;}
+			50%  {margin-left:500px; top:0px; box-shadow:rgba(255, 255, 0, .9);}
+			75%  { left:200px; top:0px;}
+			100% { left:50px; margin-top:50px;}
+		}
+		.floor{
+			height:100px;
+			width:300px;
+			background:black;
+			position:fixed;
+			margin-left:300px;
+			border-radius:100px 100px 30px 30px;
+			
+		}
+		#space{
+			height:450px;
+			
+		}
+	</style>
+</head>
+<body>
+<div class="headSite"></div>
+<div id="space">
+	<div class="newMovement"></div>
+	<div class="firstMovement"></div>
+</div>	
+	<div class="floor"></div>
+
+<script>
+/*anime({
+	targets:'div.newMovement.one',
+	translateY:[
+	{ value: 200, duration: 500}
+	
+	],
+})*/
+</script>
+</body>
+</html>
